@@ -1,0 +1,21 @@
+@import "../../colors.scss";
+
+.work-bench {
+    border-right: 1px solid $border-gray;
+    display: grid;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    grid-auto-columns: 3% 97%;
+
+    .image-canvas {
+        box-shadow: 6px 5px 15px 2px $black;
+        display: grid;
+        height: 70%;
+        width: 90%;
+        background-color: $white;
+        padding: 1em;
+        margin: 1em;
+    
+    }
+}

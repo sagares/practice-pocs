@@ -1,0 +1,179 @@
+@import "../colors.scss";
+
+.app-home {
+  margin: 0 auto;
+  text-align: center;
+
+  .app-header {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 1em;
+
+    h1 {
+      font-family: "Georama", sans-serif;
+      font-size: 4em;
+      font-weight: 300;
+      //background-image: linear-gradient(90deg, #F11D28, #FD3A2D, #FE612C, #FF872C, #FFA12C);
+      //background-image: linear-gradient(90deg, #7EFFD4, #70EBBA, #64D8A7, #4B9D7D, #40846E);
+      background-image: linear-gradient(
+        90deg,
+        $header-gradient-left,
+        $header-gradient-right
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      width: 100%;
+      margin: 0.5em auto;
+      display: grid;
+      justify-content: left;
+      padding: 0 2em;
+    }
+
+    &__left {
+      display: grid;
+      align-items: center;
+      padding: 0 2em;
+
+      .search-bar {
+        $border: 2px;
+        display: grid;
+        border: $border solid transparent;
+        background: $app-bg;
+        background-clip: padding-box;
+        border-radius: 50px;
+        position: relative;
+        width: 4rem;
+        transition: width 300ms ease-in-out;
+
+        &:before {
+          content: "";
+          position: absolute;
+          border-radius: 50px;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+          margin: -$border;
+          background: linear-gradient(
+            90deg,
+            $header-gradient-left,
+            $header-gradient-right
+          );
+        }
+
+        &__input {
+          opacity: 0;
+          cursor: pointer;
+          font-size: 1.5em;
+          outline: none;
+          padding: 0 0.5em;
+          border: 0;
+          background-color: transparent;
+          color: inherit;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: calc(100% - 4rem);
+        }
+
+        &__submit {
+          font-size: 1.5em;
+          align-items: center;
+          justify-content: center;
+          display: inline-grid;
+          cursor: pointer;
+          border: 0;
+          border-radius: 50%;
+          padding: 0;
+          background: linear-gradient(
+            90deg,
+            $header-gradient-left,
+            $header-gradient-right
+          );
+          width: 2.5em;
+          height: 2.5em;
+          color: $app-color;
+          margin-left: auto;
+          transition: background 150ms ease-in-out;
+        }
+      }
+    }
+
+    &:focus-within {
+      .search-bar {
+        width: 100%;
+
+        .search-bar__input {
+          cursor: auto;
+          opacity: 1;
+        }
+
+        .search-bar__submit {
+          background: transparent;
+          color: $header-gradient-right;
+        }
+      }
+    }
+  }
+
+  .link-container {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.5em;
+
+    a.btn-link {
+      display: grid;
+      align-items: center;
+      margin: auto;
+
+      &.neon-button {
+        width: 60%;
+        border: $clr-neon 0.125em solid;
+        font-size: 1.5rem;
+        color: $clr-neon;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 1.5em 0.2em;
+        position: relative;
+        border-radius: 0.25em;
+        text-shadow: 0 0 0.125em hsla(317, 100%, 54%, 50%),
+          0 0 0.125em currentColor;
+        box-shadow: inset 0 0 0.5em 0 $clr-neon, 0 0 0.5em 0 $clr-neon;
+        outline: none;
+
+        &:after {
+          content: "";
+          background-color: $clr-neon;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          box-shadow: 0 0 1em 0.25em $clr-neon;
+          opacity: 0;
+          transition: opacity 100ms linear;
+          z-index: -1;
+        }
+
+        &:hover,
+        &:focus {
+          color: $clr-bg;
+          text-shadow: none;
+
+          &:before {
+            opacity: 1;
+          }
+
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

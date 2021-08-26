@@ -1,0 +1,16 @@
+
+.action-bar {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 1.5em;
+    grid-row-gap: 1em;
+    .action-btn {
+        align-items: center;
+        justify-content: center;
+        display: grid;
+
+        .action-item {
+            border-radius: 2px;
+        }
+    }
+}
