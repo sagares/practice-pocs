@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import ChatUIContext from "../../../context/ChatUIContext";
+import Outline from "../../outline-cards/Outline";
 import Header from "../header/Header";
 
 import "./LeftSideBar.scss";
@@ -16,7 +17,6 @@ const LeftSideBar = () => {
   };
 
   useEffect(() => {
-    console.log("2");
     setActionItems("leftActions", [
       { name: "GitHub", actionHandler },
       { name: "LocalPhone", actionHandler },
@@ -32,6 +32,7 @@ const LeftSideBar = () => {
   return (
     <div className="left-side-bar">
       <Header type="left" actionItems={getActionItems("left")} />
+      <Outline/>
     </div>
   );
 };

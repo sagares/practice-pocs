@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { HeaderProps } from "../../../types/PropTypes";
 import ActionItem from "../../common/ActionItem";
 import "./Header.scss";
@@ -7,7 +7,7 @@ const Header = ({ text, type, actionItems }: HeaderProps) => {
   const person = {
     name: "santosh",
     dob: "24 July",
-    address: { city: "Belgaum", state: "Karnatka" },
+    address: { city: "Belgaum", state: "Karnataka" },
   }
 
   return (

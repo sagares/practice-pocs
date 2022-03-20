@@ -1,5 +1,5 @@
 .left-side-bar {
   display: grid;
-  grid-auto-flow: column;
   height: 100%;
+  grid-template-rows: 59px calc(100% - 59px);
 }

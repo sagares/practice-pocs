@@ -1,0 +1,164 @@
+{
+    "LandingPage_68-standard": {
+        "id": "view/page/3ae2fbfe-d107-4552-ba9f-65bf7ecb2445",
+        "name": "LandingPage_68-standard",
+        "options": {},
+        "locks": {},
+        "level": 0,
+        "sortId": "view/page/3ae2fbfe-d107-4552-ba9f-65bf7ecb2445",
+        "proxyId": null,
+        "children": [
+            "aboutMessageCard-bf0a21fe-6f70-4d46-b977-655bb13ffe99"
+        ]
+    },
+    "aboutMessageCard-bf0a21fe-6f70-4d46-b977-655bb13ffe99": {
+        "id": "view/card/ad9b0077-15ce-470b-9f13-2db4fb80f9d8",
+        "name": "aboutMessageCard-bf0a21fe-6f70-4d46-b977-655bb13ffe99",
+        "options": {
+            "properties": true,
+            "style": true,
+            "admin": true,
+            "add": true,
+            "replace": true,
+            "replaceOperation": true,
+            "content": true
+        },
+        "locks": {},
+        "level": 1,
+        "order": 0,
+        "parent": "LandingPage_68-standard",
+        "sortId": "view/card/ad9b0077-15ce-470b-9f13-2db4fb80f9d8",
+        "proxyId": null,
+        "indices": null,
+        "children": [
+            "promotionCard-cb083827-054e-4cbe-a10c-046c7ee7682d",
+            "whyBuyCard-be6007a4-3931-43cc-9489-f56fa30ee07b",
+            "award-90954b66-0533-46ca-90d7-c2f23ecd0391"
+        ]
+    },
+    "promotionCard-cb083827-054e-4cbe-a10c-046c7ee7682d": {
+        "id": "view/card/f6217775-a549-457f-9706-9a29260a482e",
+        "name": "promotionCard-cb083827-054e-4cbe-a10c-046c7ee7682d",
+        "options": {
+            "properties": true,
+            "style": true,
+            "admin": true,
+            "replace": true,
+            "add": true,
+            "delete": true,
+            "content": true
+        },
+        "locks": {},
+        "level": 2,
+        "order": 0,
+        "parent": "aboutMessageCard-bf0a21fe-6f70-4d46-b977-655bb13ffe99",
+        "sortId": "view/card/f6217775-a549-457f-9706-9a29260a482e",
+        "proxyId": null,
+        "children": []
+    },
+    "whyBuyCard-be6007a4-3931-43cc-9489-f56fa30ee07b": {
+        "id": "view/card/df0e7382-0486-4a40-8ab3-6d15e910b898",
+        "name": "whyBuyCard-be6007a4-3931-43cc-9489-f56fa30ee07b",
+        "options": {
+            "properties": true,
+            "style": true,
+            "admin": true,
+            "replace": true,
+            "add": true,
+            "delete": true,
+            "content": true
+        },
+        "locks": {},
+        "level": 2,
+        "order": 1,
+        "parent": "aboutMessageCard-bf0a21fe-6f70-4d46-b977-655bb13ffe99",
+        "sortId": "view/card/df0e7382-0486-4a40-8ab3-6d15e910b898",
+        "proxyId": null,
+        "children": [
+            "aboutMessageCard-23153362-27cb-438d-b0ba-f9a5e4a365c2",
+            "aboutMessageCard-838d518f-075f-4257-b054-8243b97729ff"
+        ]
+    },
+    "aboutMessageCard-23153362-27cb-438d-b0ba-f9a5e4a365c2": {
+        "id": "view/card/0a4c86c7-537f-482b-9cb2-eace844c0307",
+        "name": "aboutMessageCard-23153362-27cb-438d-b0ba-f9a5e4a365c2",
+        "options": {
+            "properties": true,
+            "style": true,
+            "admin": true,
+            "replace": true,
+            "add": true,
+            "delete": true,
+            "content": true
+        },
+        "locks": {},
+        "level": 3,
+        "order": 0,
+        "parent": "whyBuyCard-be6007a4-3931-43cc-9489-f56fa30ee07b",
+        "sortId": "view/card/0a4c86c7-537f-482b-9cb2-eace844c0307",
+        "proxyId": null,
+        "children": []
+    },
+    "aboutMessageCard-838d518f-075f-4257-b054-8243b97729ff": {
+        "id": "view/card/6c09d62f-5eea-4843-a37d-715b7d496d52",
+        "name": "aboutMessageCard-838d518f-075f-4257-b054-8243b97729ff",
+        "options": {
+            "properties": true,
+            "style": true,
+            "admin": true,
+            "replace": true,
+            "add": true,
+            "delete": true,
+            "content": true
+        },
+        "locks": {},
+        "level": 3,
+        "order": 1,
+        "parent": "whyBuyCard-be6007a4-3931-43cc-9489-f56fa30ee07b",
+        "sortId": "view/card/6c09d62f-5eea-4843-a37d-715b7d496d52",
+        "proxyId": null,
+        "children": []
+    },
+    "award-90954b66-0533-46ca-90d7-c2f23ecd0391": {
+        "id": "view/card/ce6f1969-1b9a-4ac4-9b9e-185d50422f37",
+        "name": "award-90954b66-0533-46ca-90d7-c2f23ecd0391",
+        "options": {
+            "properties": true,
+            "style": true,
+            "admin": true,
+            "replace": true,
+            "add": true,
+            "delete": true,
+            "content": true
+        },
+        "locks": {},
+        "level": 2,
+        "order": 2,
+        "parent": "aboutMessageCard-bf0a21fe-6f70-4d46-b977-655bb13ffe99",
+        "sortId": "view/card/ce6f1969-1b9a-4ac4-9b9e-185d50422f37",
+        "proxyId": null,
+        "children": [
+            "promotionCard-c153b500-95c0-4a39-a9c7-cc903935100a"
+        ]
+    },
+    "promotionCard-c153b500-95c0-4a39-a9c7-cc903935100a": {
+        "id": "view/card/52f6be52-912a-45dc-9bb9-4b61d9aba325",
+        "name": "promotionCard-c153b500-95c0-4a39-a9c7-cc903935100a",
+        "options": {
+            "properties": true,
+            "style": true,
+            "admin": true,
+            "replace": true,
+            "add": true,
+            "delete": true,
+            "content": true
+        },
+        "locks": {},
+        "level": 3,
+        "order": 0,
+        "parent": "award-90954b66-0533-46ca-90d7-c2f23ecd0391",
+        "sortId": "view/card/52f6be52-912a-45dc-9bb9-4b61d9aba325",
+        "proxyId": null,
+        "children": []
+    }
+}

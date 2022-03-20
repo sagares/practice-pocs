@@ -1,5 +1,6 @@
 import React from "react";
 import Search from "@material-ui/icons/Search";
+
 import "./Home.scss";
 
 const Home = () => {

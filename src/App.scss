@@ -1,5 +1,8 @@
 @import "./colors.scss";
 
+iframe {
+  pointer-events: none;
+}
 .main-app {
   color: $app-color;
   .app-body {

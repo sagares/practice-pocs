@@ -1,17 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ActionItem from "../common/ActionItem";
 
 import "./ActionBar.scss";
 
 const ActionBar = () => {
-  const [action, setAction] = useState()
+  //const [action, setAction] = useState()
   const actionHandler = (action) => {
     console.log(action);
   }
-
-  useEffect(() => {
-
-  }, []);
 
   return (
     <div className="action-bar">
