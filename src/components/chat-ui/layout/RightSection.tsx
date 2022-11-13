@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import ChatUIContext from "../../../context/ChatUIContext";
 import Header from "../header/Header";
-import ReactDiffViewer from 'react-diff-viewer';
 import "./RightSection.scss";
 
 const RightSection = () => {
@@ -26,7 +25,7 @@ const RightSection = () => {
     return (
         <div className="right-section-body">
             <Header text="Right Section" type="right" actionItems={getActionItems("right")}/>
-            <ReactDiffViewer oldValue={JSON.stringify(oldObject, undefined, 4)} newValue={JSON.stringify(newObject, undefined, 4)} splitView={true}/>
+            
         </div>
     );
 }
